@@ -1,12 +1,23 @@
-answer = 5
 
-print("please guess a number between 1 and 10: ")
+import random
+# generate a random number within this range
+highest = 10
+answer = random.randint(1, highest)
+
+
+print("please guess a number between 1 and {}: ".format(highest))
+print(answer)
 
 guess = int(input())
+
+while answer != guess:
+    print
 
 if guess == answer:
     print("you got it on the first try!")
 else:
+    if guess != answer:
+
     if guess < answer:
         print("that number is too low")
     else:  # this must be greater than answer
