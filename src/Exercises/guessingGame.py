@@ -2,32 +2,34 @@
 import random
 # generate a random number within this range
 highest = 10
+lowest = 0
 answer = random.randint(1, highest)
-
+print(answer)
+# remove after testing
+guess = 0
 
 print("please guess a number between 1 and {}: ".format(highest))
-print(answer)
 
-guess = int(input())
-
-while answer != guess:
-    print
-
-if guess == answer:
-    print("you got it on the first try!")
-else:
-    if guess != answer:
-
-    if guess < answer:
-        print("that number is too low")
-    else:  # this must be greater than answer
-        print("that number is too high")
+while guess != answer:
     guess = int(input())
-    if guess == answer:
-        print("that is correct!")
-    else:
-        print("sorry, that is not correct")
 
+    if guess == 00:
+        print("bye dude")
+
+    if guess > highest:
+        print("WITHIN range please.")
+
+    if guess < lowest:
+        print("that doesnt count dude")
+
+    if guess == answer:
+        print("well done you got it!")
+    else:
+
+        if guess < answer:
+            print("that number is too low, try again")
+        else:  # this must be greater than answer
+            print("that number is too high, try again")
 
 
 
