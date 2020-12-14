@@ -1,7 +1,7 @@
 
 import random
 # generate a random number within this range
-highest = 10
+highest = 1000
 lowest = 0
 answer = random.randint(1, highest)
 print(answer)
