@@ -10,13 +10,17 @@
 #         print("{} buzz".format(i))
 #         continue
 #     print("{} fizzbuzz".format(i))
+def fizz_buzz():
+    for num in range(1, 21):
+        if num % 3 == 0 and num % 5 == 0:
+            print('{} FizzBuzz'.format(num))
+        elif num % 3 == 0:
+            print('{} Fizz'.format(num))
+        elif num % 5 == 0:
+            print('{} Buzz'.format(num))
+        else:
+            print(num)
 
-for num in range(1, 21):
-    if num % 3 == 0 and num % 5 == 0:
-        print('{} FizzBuzz'.format(num))
-    elif num % 3 == 0:
-        print('{} Fizz'.format(num))
-    elif num % 5 == 0:
-        print('{} Buzz'.format(num))
-    else:
-        print(num)
+
+
+print(fizz_buzz())
