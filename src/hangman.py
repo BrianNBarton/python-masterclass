@@ -88,8 +88,8 @@ def hangman_graphic(guesses):
         print("|     /|\     ")
         print("|     / \     ")
         print("|             ")
-        print("The noose tightens")
-        print("and you struggle.")
+        print("The noose tightens around your neck")
+        print("you struggle for air, and fade to black.")
         print("GAME OVER!")
 
 
