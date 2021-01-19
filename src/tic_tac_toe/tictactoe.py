@@ -90,6 +90,9 @@ def game():
         else:
             turn = 'X'
 
+# lets try to make player 0 into a randomly generated
+
+
             # Now we will ask if player wants to restart the game or not.
     restart = input("Do want to play Again?(y/n)")
     if restart == "y" or restart == "Y":
